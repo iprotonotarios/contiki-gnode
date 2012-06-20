@@ -1,0 +1,26 @@
+Copyright (c) 2012, TNO Technical Sciences
+Author: Goncalo Bernardo (goncalobernardo@gmail.com)
+
+This is a Contiki port for the g301 platform from SOWNet Technologies.
+It is highly based on a port for the wsn430. This is to our best knowledge
+due to Alexandre Boeglin <alexandre.boeglin@inria.fr>.
+
+Some files in this folder shadow files from the contiki/core and
+contiki/cpu folders. This is because the latter are not applicable to the
+g301. However remark that upstream changes are not automatically added
+to these.
+
+For instructions on how to upload applications to the nodes refer to 
+apps/bulkupload.py. You might prefer to use directly the uploader provided
+by SOWNet.
+
+Beware that some files are not applicable and come directly from the wsn430
+port. These should be cleaned.
+
+Necessary improvements:
+* xmem support. this will need a SW SPI implementation.
+* automatic unique node id generation. typical platforms include a 
+  serial number chip provider. g301 does not.
+* button support.
+* ...
+

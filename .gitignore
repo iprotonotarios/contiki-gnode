@@ -11,3 +11,8 @@ Makefile.target
 doc/html
 patches-*
 tools/tunslip6
+/apps/snmpd
+*.wsn430
+*.g301
+*.sky
+*.ignore
