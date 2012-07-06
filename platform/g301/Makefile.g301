@@ -1,0 +1,18 @@
+# $Id: $
+
+# TODO: Drivers for sensors still need to be developed.
+# CONTIKI_TARGET_SOURCEFILES += contiki-wsn430-platform.c
+# CONTIKI_TARGET_SOURCEFILES += battery-sensor.c radio-sensor.c \
+#	temperature-sensor.c
+# CONTIKI_TARGET_SOURCEFILES += button-sensor.c // button cannot be used in parallel with radio if both define an irq for port2 # gonber
+CONTIKI_TARGET_SOURCEFILES += temperature-sensor.c
+
+WITH_CC1100=1
+
+ifndef SMALL
+SMALL=1
+endif
+
+include $(CONTIKI)/platform/g301/Makefile.common
+
+
