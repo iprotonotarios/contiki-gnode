@@ -6,6 +6,7 @@
 #	temperature-sensor.c
 # CONTIKI_TARGET_SOURCEFILES += button-sensor.c // button cannot be used in parallel with radio if both define an irq for port2 # gonber
 CONTIKI_TARGET_SOURCEFILES += temperature-sensor.c
+CLEAN += *.g301
 
 WITH_CC1100=1
 
