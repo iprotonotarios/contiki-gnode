@@ -29,7 +29,7 @@ if (len(args) != 2):
   print 'Specify target!'
   exit(0)
 subprocess.call(['make',args[1]])
-subprocess.call(['cp',args[1]+'.g301','tmpimage.ihex'])
+subprocess.call(['cp',args[1]+'.gnode','tmpimage.ihex'])
 
 # Bulk upload to all ttyUSB* devices
 uploaderList = []

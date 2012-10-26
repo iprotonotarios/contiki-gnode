@@ -28,7 +28,7 @@
  *
  * Copyright (c) 2012, TNO Technical Sciences
  * Author: Goncalo Bernardo (goncalobernardo@gmail.com)
- * Modifications: Adjusted to g301 HW configuration
+ * Modifications: Adjusted to gnode HW configuration
  *
  * $Id: $
  */
@@ -48,8 +48,8 @@
  * Definitions below are dictated by the hardware and not really
  * changeable!
  */
-/* Platform G301 */
-#define G301 1
+/* Platform GNODE */
+#define GNODE 1
 
 #define PLATFORM_HAS_LEDS    1
 #define PLATFORM_HAS_BUTTON  1
@@ -122,7 +122,7 @@ typedef unsigned long off_t;
 #define CFS_RAM_CONF_SIZE 4096
 
 /*
- * SPI bus configuration for the G301.
+ * SPI bus configuration for the GNODE.
  */
 
 /* SPI input/output registers. */

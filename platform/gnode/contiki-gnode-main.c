@@ -28,7 +28,7 @@
  *
  * Copyright (c) 2012, TNO Technical Sciences
  * Author: Goncalo Bernardo (goncalobernardo@gmail.com)
- * Modifications: adapted to g301 that does not have a serial number chip
+ * Modifications: adapted to gnode that does not have a serial number chip
  *                provider. Automatic node id generation has to be improved.
  *
  * @(#)$Id: $
@@ -216,7 +216,7 @@ main(int argc, char **argv)
 #endif /* WITH_UIP */
 
   leds_on(LEDS_GREEN);
-  // ds2411_init(); # gonber: no such chip in g301
+  // ds2411_init(); # gonber: no such chip in gnode
 
   /* XXX hack: Fix it so that the 802.15.4 MAC address is compatible
      with an Ethernet MAC address - byte 0 (byte 2 in the DS ID)
@@ -224,7 +224,7 @@ main(int argc, char **argv)
   // ds2411_id[2] &= 0xfe; # gonber
 
   leds_on(LEDS_BLUE);
-  // xmem_init(); # gonber; xmem in g301 is not attached to a SPI device
+  // xmem_init(); # gonber; xmem in gnode is not attached to a SPI device
 
   leds_off(LEDS_RED);
   rtimer_init();
