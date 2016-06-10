@@ -80,8 +80,8 @@ leds_arch_get(void)
 void
 leds_arch_set(unsigned char leds)
 {
-  LED_R_PxOUT = (LED_R_PxOUT & ~BV(LED_R_PIN)) | ((leds & LEDS_RED)? LEDS_RED : 0);
-  LED_Y_PxOUT = (LED_Y_PxOUT & ~BV(LED_Y_PIN)) | ((leds & LEDS_YELLOW)? LEDS_YELLOW : 0);
-  LED_G_PxOUT = (LED_G_PxOUT & ~BV(LED_G_PIN)) | ((leds & LEDS_GREEN)? LEDS_GREEN : 0);
+  LED_R_PxOUT = (LED_R_PxOUT & ~BV(LED_R_PIN)) | ((leds & LEDS_RED)? 1<<LED_R_PIN : 0);
+  LED_Y_PxOUT = (LED_Y_PxOUT & ~BV(LED_Y_PIN)) | ((leds & LEDS_YELLOW)? 1<<LED_Y_PIN : 0);
+  LED_G_PxOUT = (LED_G_PxOUT & ~BV(LED_G_PIN)) | ((leds & LEDS_GREEN)? 1<<LED_G_PIN : 0);
 }
 /*---------------------------------------------------------------------------*/
